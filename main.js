@@ -23,7 +23,7 @@ function newBgColor(event) {
             let rand3 = Math.floor(Math.random() * 256);
             let rand4 = Math.random();
             event.target.style.backgroundColor = `rgba(${rand1}, ${rand2}, ${rand3}`;
-            event.target.style.opacity = "" + Math.random();
+            event.target.style.opacity = 0.10;
         }
         else {
             if (event.target.style.opacity < 1) {
