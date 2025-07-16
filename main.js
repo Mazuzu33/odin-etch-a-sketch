@@ -19,17 +19,12 @@ function newBgColor(event) {
     event.target.style.backgroundColor = "blue";
 }
 
-function resetBgColor(event) {
-    event.target.style.backgroundColor = "transparent";
-}
-
 function resetGrid() {
     grid.innerHTML = '';
 }
 
 createGrid(4);
 grid.addEventListener("mouseover", newBgColor);
-grid.addEventListener("mouseout", resetBgColor);
 button.addEventListener("click", () => {
     let squares = prompt("Number of squares per side? (limit of 100)");
     while (squares > 100) {
