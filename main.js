@@ -9,3 +9,13 @@ for (let i = 0; i < 4; i++) {
         boxContainer.appendChild(box);
     }
 }
+
+function newBgColor(event) {
+    event.target.style.backgroundColor = "blue";
+}
+
+function resetBgColor(event) {
+    event.target.style.backgroundColor = "transparent";
+}
+container.addEventListener("mouseover", newBgColor);
+container.addEventListener("mouseout", resetBgColor);

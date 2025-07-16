@@ -5,20 +5,17 @@
 }
 
 .grid {
-    border: 2px solid black;
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 .boxContainer {
-    border: 2px solid pink;
     flex: 1;
     display: flex;
     flex-direction: row;
 }
 
 .box {
-    border: 2px solid yellow;
     flex: 1;
 }
