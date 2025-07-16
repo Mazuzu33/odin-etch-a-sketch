@@ -16,7 +16,9 @@ function createGrid(squares) {
 }
 
 function newBgColor(event) {
-    event.target.style.backgroundColor = "blue";
+    if (event.target.classList.contains("box")) {
+        event.target.style.backgroundColor = "blue";
+    }
 }
 
 function resetGrid() {

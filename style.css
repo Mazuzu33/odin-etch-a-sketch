@@ -5,8 +5,9 @@
 }
 
 .grid {
-    width: 50vw;
-    height: 50vw;
+    width: 45vw;
+    height: 45vw;
+    margin: auto;
     display: flex;
     flex-direction: column;
     border: 1px solid black;
@@ -20,6 +21,7 @@
 
 .box {
     flex: 1;
+    border: 1px solid black;
 }
 
 .btnContainer {
