@@ -1,12 +1,16 @@
-const container = document.querySelector("div");
-for (let i = 0; i < 4; i++) {
-    boxContainer = document.createElement("div");
-    boxContainer.classList.add("boxContainer");
-    container.appendChild(boxContainer);
-    for (let i = 0; i < 4; i++) {
-        box = document.createElement("div");
-        box.classList.add("box");
-        boxContainer.appendChild(box);
+const container = document.querySelector(".grid");
+const button = document.querySelector("button");
+
+function createGrid(squares) {
+    for (let i = 0; i < squares; i++) {
+        boxContainer = document.createElement("div");
+        boxContainer.classList.add("boxContainer");
+        container.appendChild(boxContainer);
+        for (let i = 0; i < squares; i++) {
+            box = document.createElement("div");
+            box.classList.add("box");
+            boxContainer.appendChild(box);
+        }
     }
 }
 
@@ -17,5 +21,7 @@ function newBgColor(event) {
 function resetBgColor(event) {
     event.target.style.backgroundColor = "transparent";
 }
+createGrid(4);
 container.addEventListener("mouseover", newBgColor);
 container.addEventListener("mouseout", resetBgColor);
+
